@@ -22,7 +22,7 @@ int main() {
 
 	int* ary = (int*)malloc(sizeof(int) * n);
 
-	srand((unsigned int)time(NULL)); // seed 초기화
+	srand((unsigned int)time(NULL)); // seed init
 
 	// rand: generate random number [0 ~ RAND_MAX]
 	for (int i = 0;i < n;i++) {
@@ -55,7 +55,7 @@ void selectionSort(int* ary, int n) {
 		minIdx = i;
 		
 		for (int j = i+1;j < n;j++) {
-			if (ary[j] < ary[minIdx]) // 오름차순
+			if (ary[j] < ary[minIdx]) // Ascending
 				minIdx = j;
 		}
 		SWAP(ary[i], ary[minIdx], temp);
