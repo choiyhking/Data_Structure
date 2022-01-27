@@ -16,7 +16,7 @@ void LInsert(List* plist, LData data) {
 	newNode->next = plist->head->next;
 	plist->head->next = newNode;
 
-	(plist->numOfData++);
+	(plist->numOfData)++;
 }
 
 int LFirst(List* plist, LData* pdata) {
@@ -51,7 +51,7 @@ LData LRemove(List* plist) {
 	plist->cur = plist->before;
 
 	free(rpos);
-	(plist->numOfData--);
+	(plist->numOfData)--;
 
 	return rdata;
 }
