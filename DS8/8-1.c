@@ -20,14 +20,12 @@ int main() {
 
 	while (!feof(fp)) {
 		fscanf(fp, "%c ", &op);
-		printf("@@%c@@\n", op);
 
 		if (op == 'I') { // push
 			fscanf(fp, "%d ", &num);
 			SPush(&stack, num);
-			printf("@@%d@@\n", num);
 		}
-		else if(op == 'D') { // 'D': pop
+		else { // pop
 			data = SPop(&stack);
 		}
 	}
