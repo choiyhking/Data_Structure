@@ -139,7 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="8-1.c" />
+    <ClCompile Include="8-1.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="8-2.c" />
     <ClCompile Include="ListBaseStack.c" />
   </ItemGroup>
   <ItemGroup>
