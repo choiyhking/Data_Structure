@@ -139,9 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="9-1.c" />
+    <ClCompile Include="9-1.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="9-2.c" />
     <ClCompile Include="InfixToPostfix.c" />
     <ClCompile Include="ListBaseStack.c" />
+    <ClCompile Include="PostCalculator.c" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
@@ -149,6 +153,7 @@
   <ItemGroup>
     <ClInclude Include="InfixToPostfix.h" />
     <ClInclude Include="ListBaseStack.h" />
+    <ClInclude Include="PostCalculator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

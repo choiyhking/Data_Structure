@@ -24,6 +24,12 @@
     <ClCompile Include="ListBaseStack.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="PostCalculator.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="9-2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
@@ -35,6 +41,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="ListBaseStack.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PostCalculator.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
